@@ -7,9 +7,15 @@ public class Main {
         //losuj 10 liczb do tablicy
         int[] tablicaWylosowanychLiczb = losujliczbydotablicy(5);
         //wypisz elementy tablicy
+
+        wypisz(tablicaWylosowanychLiczb);
+        System.out.println();
+
+    }
+        private static void wypisz(int[] tablica){
         System.out.println("Wylosowana tablica:");
-        for (int i = 0; i < tablicaWylosowanychLiczb.length; i++) {
-            System.out.print(tablicaWylosowanychLiczb[i] + ",");
+        for (int i = 0; i < tablica.length; i++) {
+            System.out.print(tablica[i] + ",");
         }
 
     }
